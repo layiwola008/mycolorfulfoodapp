@@ -1,0 +1,140 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: rgb(217,237,182);
+background: linear-gradient(90deg, rgba(217,237,182,1) 0%, rgba(201,223,205,1) 35%, rgba(217,237,182,1) 100%);
+  font-family: 'Montserrat', sans-serif;
+  z-index: 2;
+}
+
+:root {
+  --primary-green: #025A4E;
+  --secondary-green: #647A6F;
+}
+nav {  
+  position: fixed;
+  z-index: 5;
+  left: 50%;
+  top: 8%;
+  transform: translate(-50%, -50%);
+  width: 37%;
+  opacity: 0.9;
+}
+nav ul {
+  background: #EDE7DE;
+  border-radius: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding:16px 0;
+}
+nav ul li {
+  margin: 0 25px;
+  font-weight: bold;
+  color: var(--secondary-green);
+  font-size: 20px;
+}
+nav ul li:nth-of-type(1){
+  background: #d5c6ae;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+.sectionHeading {
+  margin-top: 100px;
+  text-align: center;
+}
+.centralise {  
+  margin: 0 auto;
+}
+.sectionHeading h1 {
+  font-size: 140px;
+  max-width: 10ch;
+  text-align: center;
+  color: var(--primary-green);
+}
+.sectionHeading p {
+  color: var(--secondary-green);
+  max-width: 65ch;
+  position: relative;
+  top: 80px;
+  font-size: 24px;
+}
+.container {
+  position: relative;
+  top: 100px;
+  background-color: #9ADFD5;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding: 50px 0 0 100px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 70px;
+  border-radius: 45px;
+  width: 85%;
+  height: 500px;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.container:hover {
+  gap: 10px;
+  transform: scaleY(1.02);
+}
+.scout-box {
+  align-self: flex-end;
+  margin-bottom: 50px;
+  position: relative;
+  right: 100px;
+}
+.scout-box p {
+  font-weight: 500;
+}
+.scout-box span {
+  font-size: 22px;
+  font-weight: 700;
+}
+.scout-img {
+  margin: 10px 0 0 66px;
+  width: 100%;
+  object-fit: contain;
+}
+.flexContainer {
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+  margin: 200px 0;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+.service-container {
+  display: flex;
+  gap: 0px;
+  flex-direction: column;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.service-container:hover {
+  gap: 10px;
+}
+.service {
+  height: 500px;
+  border-radius: 45px;
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.service:hover {
+  transform: scaleY(1.02);
+}
+.service1 {
+  flex: 2;
+  background: #F0B695;
+}
+.service2 {
+  flex: 1;
+  background: #B7E0FF;
+}
